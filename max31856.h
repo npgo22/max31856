@@ -158,7 +158,7 @@ void max31856_set_cold_junction_enable(max31856_t *max31856, max31856_cj_enable 
 void max31856_set_thermocouple_type(max31856_t *max31856, max31856_thermocouple_t therm_typ);
 void max31856_set_average_samples(max31856_t *max31856, max31856_sampling_t samples);
 
-float max31856_read_TC_temp(max31856_t *max31856);
+int32_t max31856_read_TC_temp(max31856_t *max31856);
 float max31856_read_CJ_temp(max31856_t *max31856);
 
 void max31856_set_fault_mode(max31856_t *max31856, max31856_fault_mode_t fault_mode);
